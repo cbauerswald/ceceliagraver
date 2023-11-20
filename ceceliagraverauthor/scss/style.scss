@@ -1,0 +1,216 @@
+@import "../node_modules/tailwindcss/base";
+@import "../node_modules/tailwindcss/components";
+@import "../node_modules/tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kristi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400&family=Tangerine:wght@400;700&family=Zeyada&display=swap');
+
+$rose: #fffafd;
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    @apply font-body mx-0 p-0 text-lg text-justify;
+    // background: linear-gradient(to left bottom, #ffffff 50%, #fffafd 50%);
+    background: linear-gradient(to left bottom, #ffffff 50%, #ffe3eb 50%);
+    // background: linear-gradient(to left bottom, #f5993d 50%, #ffe3eb 50%);
+
+    @screen lg {
+        @apply mx-20;
+    }
+
+    @screen 2xl {
+        @apply text-xl;
+    }
+    // @screen md {
+    //     height: 100 vh;
+    //     overflow-y: hidden;
+    // }
+}
+
+.body-wrapper {
+    @apply flex flex-col;
+}
+
+h1  {
+    @apply font-display text-4xl my-4;
+
+    @screen xs {
+        @apply text-6xl;
+    }
+}
+
+.header {
+    @apply text-center pt-10 ;
+    height: 16rem;
+
+    // .header-text::before {
+    //     content: url('../public/tree.png');
+    // }
+
+    img {
+        @apply absolute w-10 hidden pb-4;
+        left: -3rem;
+        bottom:-0.75rem;
+    }
+
+    a:hover {
+        img {
+            @apply inline;
+        }
+    }
+
+    .header-text {
+        @apply inline;
+    }
+
+    @screen xs {
+        height: 12rem;
+    }
+}
+
+
+.navbar {
+    @apply flex justify-around mx-20 my-6 font-body text-3xl flex-col xs:flex-row;
+
+    .nav-item {
+        @apply mx-2 text-base;
+        
+        &:hover, &.selected {
+            @apply border-b border-black;
+        }
+    }
+
+}
+
+.main-wrapper {
+    @apply flex flex-col md:flex-row items-center;
+
+    @screen md {
+        @apply px-10;
+    }
+
+    @screen xl {
+        @apply px-24;
+    }
+
+    @screen 2xl {
+        @apply items-start;
+    }
+}
+
+.image-wrapper {
+    @apply lg:w-2/5 h-full flex items-center justify-center;
+    
+    @screen md {
+        @apply justify-end;
+    }
+}
+
+.main-image {
+    @apply  max-h-full py-2;
+    @screen sm {
+        @apply py-4 my-4;
+    }
+}
+
+.text-wrapper {
+    @apply lg:w-3/5  h-full  p-4 mt-4 flex flex-col justify-center items-start;
+
+    @screen lg {
+        @apply px-16;
+    }
+}
+
+.main-text {
+    @apply border-b border-t border-double border-black p-2 h-full;
+    @apply bg-white bg-opacity-70;
+    p {
+        @apply p-2;
+    }
+}
+
+.main-title {
+    @apply hidden lg:block;
+}
+
+.gallery-wrapper {
+    @apply flex flex-wrap;
+
+    @screen sm {
+        @apply flex-row justify-center;
+    }
+
+    a {
+        @apply w-full p-2;
+
+        @screen sm {
+            width: auto;
+            
+            img {
+                height: 19em;
+            }
+        }
+
+        
+    }
+}
+
+.resume {
+    @apply  md:block;
+    canvas {
+        @apply mx-auto;
+    }
+}
+
+.form-row {
+    @apply flex flex-wrap mx-3 items-center;
+
+    @screen md {
+        @apply mb-6;
+    }
+
+    &.form-bottom {
+        @apply mb-2;
+    }
+}
+
+.reels-wrapper {
+    @apply flex-col flex flex-wrap w-full items-start p-10;
+
+    &:not(.md) {
+        @apply md:hidden;
+    }
+
+    &.md {
+        @apply hidden md:flex flex-row;
+    }
+    
+    iframe {
+        @apply w-full p-2;
+        @screen md {  
+            @apply w-1/2;
+        }
+    }
+}
+
+.contact-wrapper {
+    @apply text-center  my-16;
+}
+
+.footer {
+    @apply text-center flex justify-center pb-4;
+
+    a {
+        @apply px-2;
+    }
+    svg {
+        @apply w-4 inline;
+    }
+}
