@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import CeceliaHeader from '../components/cecelia_header';
-import InstaFeeds from '../Components/insta_feed';
+import InstaFeeds from '../components/insta_feed';
 import axios from 'axios'
 
 // import styles from '../styles/Home.module.css'
