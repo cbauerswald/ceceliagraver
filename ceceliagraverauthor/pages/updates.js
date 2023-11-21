@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Image from 'next/image'
 import CeceliaHeader from '../components/cecelia_header';
 // import Lightbox from 'react-image-lightbox';
 import { useState } from 'react';
@@ -53,7 +53,7 @@ const Gallery = () => {
                     <div className="update-wrapper">
                         <div className="update-box">
                             
-                            <img src="smooch_pit.webp" className="update-image flex-none"/>
+                            <Image src="/smooch_pit.webp" className="update-image flex-none" alt="Smooch Pit Logo" width={150} height={150}/>
                         
                             <div className="update-text">   
                                 <span className="update-date">October 18, 2023</span>

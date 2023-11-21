@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const CeceliaHeader = ({ selected }) => {
   return (
     <div className="header">
         <Link href="/" className="relative">
-          <img className="" src="/tree.png" />
+          <Image className="" src="/tree.png" alt="tree" width={60} height={60}/>
           <h1 className="header-text">
             Cecelia Graver
         </h1>

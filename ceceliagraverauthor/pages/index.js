@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import CeceliaHeader from '../components/cecelia_header';
 import InstaFeeds from '../Components/insta_feed';
 import axios from 'axios'
@@ -20,7 +21,7 @@ const Home = (props) => {
           <CeceliaHeader selected="home" />
           <div className="main-wrapper">
             <div className="image-wrapper">
-              <img className="main-image" src="main_photo.jpg" alt="Cecelia Graver"/>
+              <Image className="main-image" src="/main_photo.jpg" alt="Cecelia Graver" width={362.4} height={470.2}/>
             </div>
             <div className="text-wrapper">
               <div className="main-text">

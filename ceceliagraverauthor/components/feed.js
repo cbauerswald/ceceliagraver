@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 const Feed = (props) => {
     const { id, caption, media_type, media_url} = props.feed
     let post;
@@ -19,8 +19,9 @@ const Feed = (props) => {
         case "CAROUSEL_ALBUM":
             post = (
                 <img 
-                    width='100%'
-                    height='auto'
+                    className='instagram-image' 
+                    width={500}
+                    height={500}
                     id={id} 
                     src={media_url} 
                     alt={caption} 
@@ -29,9 +30,10 @@ const Feed = (props) => {
             break;
         default:
             post = (
-                <img 
-                    width='100%'
-                    height='auto'
+                <img
+                    className='instagram-image' 
+                    width={500}
+                    height={500}
                     id={id} 
                     src={media_url} 
                     alt={caption} 
