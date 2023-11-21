@@ -14,13 +14,11 @@ const Contact = () => {
                 <CeceliaHeader selected="contact"/>
 
                 <div className="contact-wrapper">
-                    <p><FontAwesomeIcon icon={faEnvelope}/><a className="px-2" target="_blank" href="mailto:cecelia.auerswald@gmail.com">cecelia.auerswald@gmail.com</a></p>
-                    <p><FontAwesomeIcon icon={faInstagram}/><a className="px-2" target="_blank" href="https://www.instagram.com/cecebunney/">@cecebunney</a></p>
-                    <p><FontAwesomeIcon icon={faTwitter}/><a className="px-2" target="_blank" href="https://twitter.com/actorcecelia">@actorcecelia</a></p>
+                    <p><FontAwesomeIcon icon={faEnvelope}/><a className="px-2 w-2" target="_blank" href="mailto:ceceliagraverauthor@gmail.com">ceceliagraverauthor@gmail.com</a></p>
+                    <p><FontAwesomeIcon icon={faInstagram}/><a className="px-2 w-2" target="_blank" href="https://www.instagram.com/her_eyes_flashed/">@her_eyes_flashed</a></p>
+                    <p><FontAwesomeIcon icon={faTwitter}/><a className="px-2 w-2" target="_blank" href="https://twitter.com/that_heartbrkr">@that_heartbrkr</a></p>
                 </div>
-                <div className="flex justify-center">
-                    <img src="/gallery/production/ew_ending.jpg" className="w-96"/>
-                </div>
+
             </div>
         </main>
 

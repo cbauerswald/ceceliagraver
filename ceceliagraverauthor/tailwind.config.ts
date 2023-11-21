@@ -5,11 +5,14 @@ module.exports = {
     extend: {
       fontFamily: {
         body: ['Josefin Slab'],
-        display: ['Kristi'],
+        display: ['Lato'],
       },
       colors: {
         rose: {
           DEFAULT: '#fffafd'
+        },
+        mint: {
+          DEFAULT: '#aaF0d1'
         }
       }
     },

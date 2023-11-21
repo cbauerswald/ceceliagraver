@@ -3,8 +3,10 @@
 @import "../node_modules/tailwindcss/utilities";
 
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kristi&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quicksand:wght@300;400&family=Tangerine:wght@400;700&family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 $rose: #fffafd;
+$mint: #aaF0d1;
 
 * {
     margin: 0;
@@ -18,7 +20,8 @@ body {
 body {
     @apply font-body mx-0 p-0 text-lg text-justify;
     // background: linear-gradient(to left bottom, #ffffff 50%, #fffafd 50%);
-    background: linear-gradient(to left bottom, #ffffff 50%, #ffe3eb 50%);
+    //DIAGONAL COLORED BACKGROUND
+    background: linear-gradient(to left top, #ffffff 50%, #d8e6ca 50%);
     // background: linear-gradient(to left bottom, #f5993d 50%, #ffe3eb 50%);
 
     @screen lg {
@@ -127,6 +130,16 @@ h1  {
         @apply px-16;
     }
 }
+.updates-wrapper {
+    @apply p-16;
+}
+.update-wrapper {
+    @apply p-2;
+}
+
+.update-date {
+    @apply text-slate-400;
+}
 
 .main-text {
     @apply border-b border-t border-double border-black p-2 h-full;
@@ -134,6 +147,25 @@ h1  {
     p {
         @apply p-2;
     }
+}
+
+.update-box {
+    @apply border-b border-t border-double border-black p-2 h-full ;
+    @apply bg-white bg-opacity-70;
+    @apply  flex p-10;
+
+    p {
+        @apply p-2;
+    }
+}
+
+.update-text {
+    @apply flex-auto;
+    @apply flex flex-col justify-center;
+}
+
+.update-image {
+    @apply w-40 flex-none m-4;
 }
 
 .main-title {
@@ -213,4 +245,25 @@ h1  {
     svg {
         @apply w-4 inline;
     }
+}
+
+.link {
+    @apply underline;
+}
+
+//Instagram Feed SCSS
+.insta-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+	gap: 20px;
+	padding: 15px;
+	img {
+		width: 100%;
+		height: auto;
+		display: block;
+		transition: all 100ms ease-out;
+		&:hover {
+			transform: scale(1.04);
+		}
+	}
 }

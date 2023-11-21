@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
             <Html>
                 <Head>
                     {/* <title>Cecelia Auerswald</title> */}
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="icon" href="/favicon_new.ico" />
                 </Head>
                 <body>
                     <Main />
@@ -17,9 +17,9 @@ export default class MyDocument extends Document {
                 </body>
                 <footer>
                     <div className="footer">
-                        <a>cecelia.auerswald@gmail.com</a>
-                        <a href="https://www.instagram.com/cecebunney/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>
-                        <a href="https://twitter.com/actorcecelia" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
+                        <a>ceceliagraverauthor@gmail.com</a>
+                        <a href="https://www.instagram.com/her_eyes_flashed/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>
+                        <a href="https://twitter.com/that_heartbrkr" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
                     </div>
                 </footer>
             </Html>
