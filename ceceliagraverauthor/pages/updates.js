@@ -58,7 +58,7 @@ const Gallery = () => {
                             <div className="update-text">   
                                 <span className="update-date">October 18, 2023</span>
                                 <span>
-                                    Cecelia's first novel <b>THE LAND OF HEART AND HOME</b> was selected by the <a className='link' target="_blank" href="https://www.smoochpit.com/colleenkelly">Smooch Pit 2023 mentorship program</a>. She is so excited to tbe working with <a href="https://www.colleenkellyauthor.com/" target="_blank" className="link">Colleen Kelly</a> to take her work to the next level! Keep your eye on this page and her Instagram for more updates.
+                                    Cecelia&apos;s first novel <b>THE LAND OF HEART AND HOME</b> was selected by the <a className='link' target="_blank" href="https://www.smoochpit.com/colleenkelly">Smooch Pit 2023 mentorship program</a>. She is so excited to tbe working with <a href="https://www.colleenkellyauthor.com/" target="_blank" className="link">Colleen Kelly</a> to take her work to the next level! Keep your eye on this page and her Instagram for more updates.
                                 </span>
                             </div>
                             
